@@ -11,7 +11,7 @@ public class Solution {
         int order[]=new int[n];
         int o=0;
         for(int i=0;i<n;i++){
-            List<Integer> l=new ArrayList();
+            List<Integer> l=new ArrayList<>();
             l.add(i);l.add(courses[i][1]);
             q2.add(l);
         }
