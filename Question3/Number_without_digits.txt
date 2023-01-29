@@ -1,0 +1,22 @@
+Count Coprime (Hard)
+Maths teacher gave Mohan a number A and asked him to find out the count of numbers coprime to A in the range [L, R].
+
+Constraints
+1 <= A <= 10^9
+1<= L, R <= 10^18 
+
+Input Format 
+A single line containing three space separated integers A, L and R.
+Output Format
+Print count.
+
+Sample Input
+6 1 6
+Sample Output
+2
+Explanation: 1 and 5 are only number in range 1 to 6 coprime with 6.
+
+Sample Input 2
+15 30 100
+Sample Output 2
+37
