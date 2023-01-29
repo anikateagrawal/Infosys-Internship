@@ -5,11 +5,11 @@ import java.util.*;
 public class Solution {
 
     public static long solve(int a,long l,long r){
-        Set<Long> pa=new HashSet();
+        Set<Long> pa=new HashSet<>();
         prime(a,pa);
-        List<List<Long>> a1=new ArrayList();
-        for(int i=0;i<=pa.size();i++)a1.add(new ArrayList());
-        fun(new ArrayList(pa),0,a1,1,0);
+        List<List<Long>> a1=new ArrayList<>();
+        for(int i=0;i<=pa.size();i++)a1.add(new ArrayList<>());
+        fun(new ArrayList<>(pa),0,a1,1,0);
         a1.remove(0);
         long c1=coprime(a1,l,r);
         return c1;
