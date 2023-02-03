@@ -1,7 +1,19 @@
 package Code_2;
 import java.util.*;
 public class Solution {
-
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int courses[][]=new int[n][2];
+        for(int i=0;i<n;i++){
+            courses[i][0]=sc.nextInt();
+            courses[i][1]=sc.nextInt();
+        }
+        int order[]=solve(courses);
+        for(int i=0;i<n;i++){
+            System.out.print(order[i]+" ");
+        }
+    }
     public static int[] solve(int courses[][]){
         PriorityQueue<List<Integer>> q=new PriorityQueue<List<Integer>>((a,b)->
             (int)a.get(1)!=(int)b.get(1) ? a.get(1)-b.get(1) : a.get(0)-b.get(0));
